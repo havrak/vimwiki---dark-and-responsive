@@ -9,7 +9,7 @@ jQuery('table').each(function () {
 
 // Hack to fix jumping via anchors when header is static, doesn't require any classes
 function offsetAnchor() {
-	window.scrollTo(window.scrollX, window.scrollY - 70);
+	window.scrollTo(window.scrollX, window.scrollY - 60);
 
 }
 

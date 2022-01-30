@@ -5,7 +5,7 @@
 * mobile friendly
 	* this includes tables which get reformated
 
-Live version of might be available on [havrak.xyz](havrak.xyz).
+Live version of might be available on [havrak.xyz](http://havrak.xyz).
 
 
 Basic setup in .vimrc (vimwiki is stored in ~/.vim/vimwiki):
@@ -13,7 +13,7 @@ Basic setup in .vimrc (vimwiki is stored in ~/.vim/vimwiki):
 let g:vimwiki_list = [{'path': '~/.vim/vimwiki/', 'path_html': '~/.vim/vimwiki/html', "auto_diary_index": 1,'template_path': '~/.vim/vimwiki/templates','template_default': 'def_template', 'template_ext': '.html'}]
 let g:vimwiki_listsyms = '✗✓'
 let g:vimwiki_conceallevel = 2
-let g:vimwiki_valid_html_tags = 'b,i,s,u,sub,sup,kbd,br,hr,pre,script'
+let g:vimwiki_valid_html_tags = 'b,i,s,u,sub,sup,kbd,br,hr,pre,script,div'
 
 ```
 
@@ -23,6 +23,17 @@ git clone https://github.com/havrak/vimwiki---dark-and-responsive
 mv https://github.com/havrak/vimwiki---dark-and-responsive .vim/vimwiki_template
 ln -sf $HOME/.vim/vimwiki_template/templates/ $HOME/.vim/vimwiki/
 ln -sf $HOME/.vim/vimwiki_template/html/ $HOME/.vim/vimwiki/html/
+```
+
+Dynamic tables, aren't default behaviour. To use them table must be wrapperd in div with class dynamic-table.
+
+```vimwiki
+<div class="dynamic-table">
+| Col1  | Col2  |
+|-------|-------|
+| item1 | item1 |
+| item2 | item2 |
+</div>
 ```
 
 Code snippets use standart annotation:

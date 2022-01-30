@@ -103,6 +103,7 @@ nav .menu-icon img {
 
 	nav .menu-icon {
 		display: flex;
+		padding: 0px ;
 	}
 
 	nav ul,
@@ -311,33 +312,43 @@ td {
 @media (max-width: 600px) {
 
 	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr {
+	.dynamic-table table {
 		border:0px;
-
 		display: block;
 	}
-
+	.dynamic-table thead {
+		border:0px;
+		display: block;
+	}
+	.dynamic-table tbody {
+		border:0px;
+		display: block;
+	}
 	/* Hide table headers (but not display: none;, for accessibility) */
-	th {
+	.dynamic-table th {
 		position: absolute;
+		display: block;
+		border:0px;
 		top: -9999px;
 		left: -9999px;
 	}
 
-	tr {
-		border: 1px solid #ccc;
+	.dynamic-table tr {
 		margin-bottom: 15px;
+		border: none !important;
+		display: block;
 	}
 
-	td {
+	.dynamic-table td {
 		/* Behave  like a "row" */
 		border: none;
-		border-bottom: 1px solid #eee;
+		display: block;
+		border: 1px solid #eee;
 		position: relative;
 		padding-left: 50%;
 	}
 
-	td:before {
+	.dynamic-table td:before {
 		/* Now like a table header */
 		position: absolute;
 		/* Top/left values mimic padding */
@@ -346,8 +357,8 @@ td {
 		width: 45%;
 		padding-right: 10px;
 		white-space: nowrap;
+		content: attr(data-heading);
 	}
-	td:before { content: attr(data-heading); }
 }
 /*--------------------------------------------------------------
 # Todo lists
