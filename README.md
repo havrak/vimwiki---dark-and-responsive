@@ -5,7 +5,7 @@
 * mobile friendly
 	* this includes tables which get reformated
 
-Live version of might be available on havrak.xyz.
+Live version of might be available on [havrak.xyz](havrak.xyz).
 
 
 Basic setup in .vimrc (vimwiki is stored in ~/.vim/vimwiki):
@@ -15,6 +15,14 @@ let g:vimwiki_listsyms = '✗✓'
 let g:vimwiki_conceallevel = 2
 let g:vimwiki_valid_html_tags = 'b,i,s,u,sub,sup,kbd,br,hr,pre,script'
 
+```
+
+Easiest way to setup is via symlinks
+```bash
+git clone https://github.com/havrak/vimwiki---dark-and-responsive
+mv https://github.com/havrak/vimwiki---dark-and-responsive .vim/vimwiki_template
+ln -sf $HOME/.vim/vimwiki_template/templates/ $HOME/.vim/vimwiki/
+ln -sf $HOME/.vim/vimwiki_template/html/ $HOME/.vim/vimwiki/html/
 ```
 
 Code snippets use standart annotation:
