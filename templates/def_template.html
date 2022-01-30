@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<link rel="Stylesheet" type="text/css" href="%root_path%css/style.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="%root_path%css/icon.ico">
+	<title>%title%</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+	<script async src="%root_path%js/code-prettify.js"></script>
+
+	<!-- Some CSS, for removing Code prettify borders -->
+	<style>
+		pre.prettyprint {
+			border: none !important;
+			padding: 0.3px !important;
+			color: white !important;
+			background-color: #222222 !important;
+		}
+
+		div>pre>p {
+			display: none !important;
+		}
+
+		div>pre>span {
+			display: none !important;
+		}
+
+		body {
+			font-family: DejaVu Sans, sans-serif !important;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<a href="#" class="menu-icon"><img src="img/hamburger-menu.svg"></a>
+		<ul class="navbar-nav">
+			<li><a href="%root_path%index.html">Domov</a></li>
+			<li><a href="%root_path%Seznam knih.html">Knihy</a></li>
+			<li><a href="%root_path%Poznámky.html">Poznámky</a></li>
+		</ul>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		%content%
+	</div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="%root_path%js/scripts.js"></script>
+
+</html>
