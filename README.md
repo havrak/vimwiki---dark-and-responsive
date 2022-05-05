@@ -1,11 +1,12 @@
-# CSS/JS/html for vimwiki
+[#](#) CSS/JS/html for vimwiki
 * dark theme by default
 * syntax highlighting via google prettify
 * straightforward css, actually editable by end user
 * mobile friendly
 	* this includes tables which get reformated
 
-Live version of might be available on [havrak.xyz](http://havrak.xyz).
+Live version of might be available on [wiki.havrak.xyz](https://wiki.havrak.xyz).
+If you wish to display the site, you need to accept the self signed certificate (or use http).
 
 
 Basic setup in .vimrc (vimwiki is stored in ~/.vim/vimwiki):
@@ -27,7 +28,7 @@ ln -sf $HOME/.vim/vimwiki_template/html/ $HOME/.vim/vimwiki/html/
 
 Dynamic tables, aren't default behaviour. To use them table must be wrapperd in div with class dynamic-table.
 
-```vimwiki
+```markdown
 <div class="dynamic-table">
 | Col1  | Col2  |
 |-------|-------|
@@ -37,7 +38,7 @@ Dynamic tables, aren't default behaviour. To use them table must be wrapperd in 
 ```
 
 Code snippets use standart annotation:
-```vimwiki
+```markdown
 <pre class ="prettyprint lang-cpp">
 {{{cpp
 	#include <iostream>
