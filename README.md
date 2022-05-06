@@ -50,6 +50,14 @@ Code snippets use standart annotation:
 </pre>
 ```
 
+Same goes for math mode. MathJax isn't stored locally, if you wish to do so please edit def_template.html
+
+```markdown
+{{$
+	\frac{5}{a}+\Delta_b = 5
+}}$
+```
+
 ## Screenshots
 ![Normal layout](./images/pic1.png)
 ![Table](./images/pic2.png)
