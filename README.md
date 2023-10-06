@@ -1,4 +1,4 @@
-[#](#) CSS/JS/html for vimwiki
+# CSS/JS/html for vimwiki
 * dark theme by default
 * syntax highlighting via google prettify
 * straightforward css, actually editable by end user
@@ -26,7 +26,7 @@ ln -sf $HOME/.vim/vimwiki_template/templates/ $HOME/.vim/vimwiki/
 ln -sf $HOME/.vim/vimwiki_template/html/ $HOME/.vim/vimwiki/html/
 ```
 
-Dynamic tables, aren't default behaviour. To use them table must be wrapperd in div with class dynamic-table.
+Dynamic tables, aren't default behavior. To use them table must be wrapperd in div with class dynamic-table.
 
 ```markdown
 <div class="dynamic-table">
@@ -53,7 +53,7 @@ Code snippets use standart annotation:
 Same goes for math mode. MathJax isn't stored locally, if you wish to do so please edit def_template.html
 
 ```markdown
-{{$
+{{$%align%
 	\frac{5}{a}+\Delta_b = 5
 }}$
 ```
